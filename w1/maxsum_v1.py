@@ -18,14 +18,17 @@ start = time.process_time() #start time
 
 maxSum = float("-inf") # handle negative inf
 length = len(lst)
-for i in range(length): 
-    for j in range(i, length):
+for i in range(length): # outerloop for start
+    for j in range(i, length): # innerloop for end
         currentSum = Sum(lst, i, j)
         if currentSum > maxSum: # compare and reassign 
             maxSum = currentSum 
+            
 finish = time.process_time() # end time
+
 print(maxSum)
-print("running time = ", finish-start)
+print("running time = ", finish-start) # calculate runtime
+
 
 ''' 
 this brute force method works with 3 loops -> O(n^3) time
