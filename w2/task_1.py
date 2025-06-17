@@ -1,3 +1,7 @@
+# Nyunt Tin
+# 6632004
+# Sec541
+
 n = int(input())
 x = [None] * n # list of length n
 
@@ -13,17 +17,4 @@ def comb(i):
         x[i] = 1
         comb(i+1)
 
-
-
-'''
- input: 3, output =
-    000
-    001
-    010
-    011
-    100
-    101
-    110
-    111
-'''
 comb(0)

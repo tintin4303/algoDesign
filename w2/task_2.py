@@ -1,3 +1,7 @@
+# Nyunt Tin
+# 6632004
+# Sec541
+
 n = int(input())
 k = int(input())
 x = [None] * n # list of length n
